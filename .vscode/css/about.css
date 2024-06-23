@@ -1,0 +1,42 @@
+/*about*/
+h2 {
+    display: flex;
+    color: brown;
+    justify-content: center;
+    margin-bottom: 1rem;
+    animation-delay: 0.2s; 
+  }
+  
+  .about {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .about__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .about__img {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .about__img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about__text {
+    text-align: center;
+  }
+  

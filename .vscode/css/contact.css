@@ -1,0 +1,70 @@
+ /*contact*/
+ .contact__container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; 
+    padding: 20px;
+    justify-content: space-evenly; 
+    align-items: stretch;
+
+}
+
+.contact__details {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    width: 100%; 
+    padding: 20px;
+    background-color: green; 
+        border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+  .contact__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 400px;
+    padding: 20px;
+    background-color: green;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact__input,
+.contact__button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact__input:focus,
+.contact__button:focus {
+    border-color: #007BFF;
+}
+
+.contact__input::placeholder {
+    color: #999;
+}
+
+.contact__button {
+    grid-column: span 2;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__button:hover {
+    background-color: #0056b3;
+}
+
+textarea.contact__input {
+    grid-column: span 2;
+    resize: vertical;
+}

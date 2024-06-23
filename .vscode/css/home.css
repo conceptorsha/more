@@ -1,0 +1,52 @@
+/* hero section */
+
+.hero__img img{
+    height:100%;
+    width: 100%;
+  
+  
+  }
+  .hero__content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    position: absolute;
+    top: 25%;
+     padding: 20px;
+     animation-fill-mode: forwards;
+     opacity: 0;
+     animation: fadeInSlideUp 1s ease-in-out forwards;
+     transition: opacity 30s ease-in-out, transform 30s ease-in-out;
+  
+  }
+  .hero__content.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .hero__content p{
+    text-align: center;
+    font-size:2.5rem;
+    margin: 0 2.5rem;
+    animation-delay: 0.7s;
+  }
+  .hero__btn{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color:white;
+    background: red;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    animation-delay: 0.7s;
+  }
+  @keyframes fadeInSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from 20px below */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* End at original position */
+    }
+  }
