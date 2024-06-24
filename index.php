@@ -7,7 +7,7 @@ require_once 'models/login.php';
 require_once 'models/signup.php';
 
 
-require_once 'views/header.php';
+require_once 'views/new_header.php';
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS);
 $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_SPECIAL_CHARS);

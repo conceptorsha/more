@@ -1,5 +1,5 @@
 <main class="l-main">
-        <!-- Home 
+        <!-- Home
         <section class="hero" id="hero">
             <div class="hero__img">
                 <img src="image/mm.png.jpg" alt="Image 1" class="active">
@@ -14,31 +14,31 @@
 
         <div class="slideshow-container">
 
-<section class="mySlides fade">
-  
+<div class="mySlides fade">
+
   <img src="image/mm.png.jpg" style="width:100%">
- 
+
 </div>
 
 <div class="mySlides fade">
-  
+
   <img src="image/image.jpeg" style="width:100%">
-  
+
 </div>
 
 <div class="mySlides fade">
- 
+
   <img src="image/home.png" style="width:100%">
- 
+
 </div>
 
 </div>
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
   <script>
 let slideIndex = 0;
 showSlides();
@@ -48,14 +48,14 @@ function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
@@ -98,7 +98,7 @@ function showSlides() {
 <section class="" id="about">
     <h2>about us</h2>
     <div class="about__container bd-grid">
-    
+
         <div class="about__img ">
             <img src="image/mm.png.jpg" alt="">
         </div>
@@ -110,11 +110,11 @@ function showSlides() {
 <!--service-->
 <section class="services" id="service">
     <h2>services</h2>
-    
+
     <div class="services-container">
         <div class="services-card">
             <div class="services-card-title">
-                Online advertisement 
+                Online advertisement
 
             </div>
         </div>
@@ -126,7 +126,7 @@ function showSlides() {
         </div>
         <div class="services-card">
             <div class="services-card-title">
-                Online advertisement 
+                Online advertisement
 
             </div>
         </div>
@@ -146,7 +146,7 @@ function showSlides() {
     <!--contact-->
     <section class="contact" id="contact" >
         <h2 class="section-title">Contact</h2>
-    
+
         <div class="contact__container bd-grid">
             <div class="contact__details">
         <p>Email:<a href="info@more.co.ke">info@more.co.ke</a> </p>
@@ -160,20 +160,20 @@ function showSlides() {
                 <input type="mail" placeholder="Email" class="contact__input" name="email" id='email'>
                 <textarea name="message" id="message" cols="0" rows="10" class="contact__input"></textarea>
                 <input type="submit" value="Send" class="contact__button button">
-                <div id="statusMessage"> 
+                <div id="statusMessage">
                     <!-- <?php
-                    if (! empty($message)) {
-                        ?>
+if (!empty($message)) {
+    ?>
                         <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
                     <?php
-                    }
-                    ?> -->
+}
+?> -->
                 </div>
             </form>
         </div>
 
     </section>
-    
+
 <!--login-->
 
 <section class="container">
@@ -186,14 +186,14 @@ function showSlides() {
                <!--<span class="icon"><ion-icon name="mail"></ion-icon></span>-->
                <label for="email">email</label>
                 <input type="text"  name="email" id = "email" required>
-               
+
               </div>
               <div class="field input">
                <!-- /*<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>*/>-->
-               
+
                <label for="password">password</label>
                 <input type="password"  name="password" id = "password" required>
-               
+
               </div>
               <div clss="field">
               <input type="submit" class="btn" name="submit" value="login" required>
@@ -203,5 +203,5 @@ function showSlides() {
               </div>
                </form>
             </div>
-</section> 
+</section>
 </main>
